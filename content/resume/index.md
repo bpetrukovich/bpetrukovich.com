@@ -55,4 +55,8 @@ Took ownership of **mentoring a new junior developer**: onboarding, code reviews
 Fully **owned the end-to-end delivery of a major product feature**: requirements analysis, estimation, Proof of Concept, and implementation of key stories in a Fullstack role
 {{< /career-item >}}
 
+{{< career-item date="January" >}}
+Participated in **technical interviews**. Prepared questions and provided feedback on candidates.
+{{< /career-item >}}
+
 {{< /career-timeline >}}
