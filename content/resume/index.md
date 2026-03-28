@@ -47,7 +47,7 @@ Took ownership of **mentoring a new junior developer**: onboarding, code reviews
 {{< /career-item >}}
 
 {{< career-item date="August" >}}
-**Recognized as one of the top performers** of the half-year period.
+**Recognized as one of the top performers** of the half-year period
 [Details in a LinkedIn post](https://www.linkedin.com/posts/bpetrukovich_im-happy-to-share-a-significant-milestone-activity-7365111561054593025-HqOP)
 {{< /career-item >}}
 
@@ -55,8 +55,18 @@ Took ownership of **mentoring a new junior developer**: onboarding, code reviews
 Fully **owned the end-to-end delivery of a major product feature**: requirements analysis, estimation, Proof of Concept, and implementation of key stories in a Fullstack role
 {{< /career-item >}}
 
+{{< career-year "2026" >}}
+
 {{< career-item date="January" >}}
-Participated in **technical interviews**. Prepared questions and provided feedback on candidates.
+Participated in **technical interviews**. Prepared questions and provided feedback on candidates
+{{< /career-item >}}
+
+{{< career-item date="February" >}}
+**Became a mentor** to two newcomers whom I interviewed
+{{< /career-item >}}
+
+{{< career-item date="March" >}}
+In addition to the main project, I was invited as an **external tech expert** to set up technical processes and CI/CD in a small internal project consisting of 2 devs
 {{< /career-item >}}
 
 {{< /career-timeline >}}
