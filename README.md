@@ -2,6 +2,12 @@
 
 Build with [Hugo](https://gohugo.io) & [Blowfish](https://blowfish.page) theme.
 
+## How to run
+
+```bash
+hugo server
+```
+
 ## Notes
 
 Need [Hugo](https://gohugo.io) to run.
