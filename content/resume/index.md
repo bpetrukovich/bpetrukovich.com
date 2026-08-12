@@ -47,7 +47,7 @@ Took ownership of **mentoring a new junior developer**: onboarding, code reviews
 {{< /career-item >}}
 
 {{< career-item date="August" >}}
-**Recognized as one of the top performers** of the half-year period
+**Recognized as one of the top performers** of the half-year period.
 [Details in a LinkedIn post](https://www.linkedin.com/posts/bpetrukovich_im-happy-to-share-a-significant-milestone-activity-7365111561054593025-HqOP)
 {{< /career-item >}}
 
@@ -67,6 +67,10 @@ Participated in **technical interviews**. Prepared questions and provided feedba
 
 {{< career-item date="March" >}}
 In addition to the main project, I was invited as an **external tech expert** to set up technical processes and CI/CD in a small internal project consisting of 2 devs
+{{< /career-item >}}
+
+{{< career-item date="June" >}}
+Did another round of **technical interviews**, this time for **Middle** Developer.
 {{< /career-item >}}
 
 {{< /career-timeline >}}
