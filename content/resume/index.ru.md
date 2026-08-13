@@ -22,7 +22,7 @@ layoutBackgroundHeaderSpace = false
 
 +++
 
-## Ключевые достижения
+## Достижения
 
 {{< career-timeline >}}
 
