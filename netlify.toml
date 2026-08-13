@@ -3,13 +3,10 @@ command = "hugo --gc --minify"
 publish = "public"
 
 [build.environment]
+HUGO_VERSION = "0.164.0"
 NODE_ENV = "production"
 GO_VERSION = "1.25.5"
 TZ = "UTC+3"
 
 [context.production.environment]
-HUGO_VERSION = "0.154.4"
 HUGO_ENV = "production"
-
-[context.deploy-preview.environment]
-HUGO_VERSION = "0.154.4"
