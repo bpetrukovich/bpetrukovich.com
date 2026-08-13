@@ -26,24 +26,28 @@ layoutBackgroundHeaderSpace = false
 
 {{< career-timeline >}}
 
-{{< career-year "2024" >}}
+{{< career-year "2026" >}}
 
-{{< career-item date="November 2024" to="January 2025" >}}
-Completed an intensive internship-style program **“Commercial Software Development — C#”**, resulting in a full-time job offer from itransition
+{{< career-item date="June" >}}
+Did another round of **technical interviews**, this time for **Middle** Developer.
+{{< /career-item >}}
+
+{{< career-item date="March" >}}
+In addition to the main project, I was invited as an **external tech expert** to set up technical processes and CI/CD in a small internal project consisting of 2 devs
+{{< /career-item >}}
+
+{{< career-item date="February" >}}
+**Became a mentor** to two newcomers whom I interviewed
+{{< /career-item >}}
+
+{{< career-item date="January" >}}
+Participated in **technical interviews**. Prepared questions and provided feedback on candidates
 {{< /career-item >}}
 
 {{< career-year "2025" >}}
 
-{{< career-item date="February" >}}
-Joined itransition as a **Fullstack Developer**, working on a large-scale BI system for pharmaceutical companies
-{{< /career-item >}}
-
-{{< career-item date="June" >}}
-Delivered intensive training sessions on **backend development fundamentals** for two senior frontend engineers
-{{< /career-item >}}
-
-{{< career-item date="July" >}}
-Took ownership of **mentoring a new junior developer**: onboarding, code reviews, and task planning
+{{< career-item date="September" to="December" >}}
+Fully **owned the end-to-end delivery of a major product feature**: requirements analysis, estimation, Proof of Concept, and implementation of key stories in a Fullstack role
 {{< /career-item >}}
 
 {{< career-item date="August" >}}
@@ -51,26 +55,22 @@ Took ownership of **mentoring a new junior developer**: onboarding, code reviews
 [Details in a LinkedIn post](https://www.linkedin.com/posts/bpetrukovich_im-happy-to-share-a-significant-milestone-activity-7365111561054593025-HqOP)
 {{< /career-item >}}
 
-{{< career-item date="September" to="December" >}}
-Fully **owned the end-to-end delivery of a major product feature**: requirements analysis, estimation, Proof of Concept, and implementation of key stories in a Fullstack role
-{{< /career-item >}}
-
-{{< career-year "2026" >}}
-
-{{< career-item date="January" >}}
-Participated in **technical interviews**. Prepared questions and provided feedback on candidates
-{{< /career-item >}}
-
-{{< career-item date="February" >}}
-**Became a mentor** to two newcomers whom I interviewed
-{{< /career-item >}}
-
-{{< career-item date="March" >}}
-In addition to the main project, I was invited as an **external tech expert** to set up technical processes and CI/CD in a small internal project consisting of 2 devs
+{{< career-item date="July" >}}
+Took ownership of **mentoring a new junior developer**: onboarding, code reviews, and task planning
 {{< /career-item >}}
 
 {{< career-item date="June" >}}
-Did another round of **technical interviews**, this time for **Middle** Developer.
+Delivered intensive training sessions on **backend development fundamentals** for two senior frontend engineers
+{{< /career-item >}}
+
+{{< career-item date="February" >}}
+Joined itransition as a **Fullstack Developer**, working on a large-scale BI system for pharmaceutical companies
+{{< /career-item >}}
+
+{{< career-year "2024" >}}
+
+{{< career-item date="November 2024" to="January 2025" >}}
+Completed an intensive internship-style program **“Commercial Software Development — C#”**, resulting in a full-time job offer from itransition
 {{< /career-item >}}
 
 {{< /career-timeline >}}
