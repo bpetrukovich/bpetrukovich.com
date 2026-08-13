@@ -1,3 +1,14 @@
+#itr {
+  background-image: linear-gradient(to right, #4d9eff, #ff19d3);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.underline-on-hover:hover {
+  text-decoration: underline;
+}
+
 .career-timeline-wrap {
   position: relative;
   margin: 2rem 0;
@@ -16,11 +27,19 @@
   inset: auto 0 0;
   height: 5.5rem;
   pointer-events: none;
-  background: linear-gradient(to bottom, transparent, rgb(var(--color-neutral)));
+  background: linear-gradient(
+    to bottom,
+    transparent,
+    rgb(var(--color-neutral))
+  );
 }
 
 .dark .career-timeline-wrap.is-collapsed::after {
-  background: linear-gradient(to bottom, transparent, rgb(var(--color-neutral-800)));
+  background: linear-gradient(
+    to bottom,
+    transparent,
+    rgb(var(--color-neutral-800))
+  );
 }
 
 .career-timeline__toggle {
@@ -55,7 +74,8 @@
   z-index: 1;
 }
 
-.career-timeline-wrap:not(.is-collapsed) .career-timeline__toggle:not([hidden]) {
+.career-timeline-wrap:not(.is-collapsed)
+  .career-timeline__toggle:not([hidden]) {
   display: inline-flex;
 }
 
@@ -116,7 +136,9 @@
   background-color: rgb(var(--color-primary-500));
   flex-shrink: 0;
   z-index: 1;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
 }
 
 .dark .career-item__dot {
