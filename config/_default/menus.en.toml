@@ -1,4 +1,3 @@
-# TODO: setup weights
 [[main]]
 none = "none"
 
@@ -12,7 +11,7 @@ weight = 1
 name = "Motivation"
 pageRef = "motivation"
 identifier = "liUqp6ZBNg"
-weight = 9_999
+weight = 2
 
 # [[main]]
 # name = "Me"
@@ -24,7 +23,7 @@ weight = 9_999
 name = "Resume"
 pageRef = "resume"
 identifier = "1fQk6Z0a85"
-weight = 9_999
+weight = 3
 
 [[footer]]
 none = "none"
