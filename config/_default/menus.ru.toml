@@ -14,11 +14,11 @@ pageRef = "motivation"
 identifier = "liUqp6ZBNg"
 weight = 9_999
 
-[[main]]
-name = "Обо мне"
-pageRef = "me"
-identifier = "4XK6q59oB0"
-weight = 9_999
+# [[main]]
+# name = "Я"
+# pageRef = "me"
+# identifier = "4XK6q59oB0"
+# weight = 9_999
 
 [[main]]
 name = "Резюме"
