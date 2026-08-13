@@ -2,7 +2,7 @@ disabled = false
 languageCode = "ru"
 languageName = "Русский"
 weight = 2
-title = "Богдан Петрукович"
+title = "bpetrukovich"
 
 [params]
 displayName = "RU"
