@@ -1,7 +1,66 @@
+.career-timeline-wrap {
+  position: relative;
+  margin: 2rem 0;
+}
+
 .career-timeline {
   display: grid;
   grid-template-columns: auto 20px 1fr;
-  margin: 2rem 0;
+  overflow: hidden;
+  transition: max-height 0.35s ease;
+}
+
+.career-timeline-wrap.is-collapsed::after {
+  content: "";
+  position: absolute;
+  inset: auto 0 0;
+  height: 5.5rem;
+  pointer-events: none;
+  background: linear-gradient(to bottom, transparent, rgb(var(--color-neutral)));
+}
+
+.dark .career-timeline-wrap.is-collapsed::after {
+  background: linear-gradient(to bottom, transparent, rgb(var(--color-neutral-800)));
+}
+
+.career-timeline__toggle {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-top: 0.25rem;
+  padding: 0.35rem;
+  border: 0;
+  background: transparent;
+  color: rgb(var(--color-primary-500));
+  cursor: pointer;
+}
+
+.dark .career-timeline__toggle {
+  color: rgb(var(--color-primary-400));
+}
+
+.career-timeline__chevron {
+  transition: transform 0.25s ease;
+}
+
+.career-timeline-wrap.is-collapsed .career-timeline__toggle {
+  display: inline-flex;
+  position: absolute;
+  left: 50%;
+  bottom: 0.15rem;
+  width: auto;
+  margin: 0;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+
+.career-timeline-wrap:not(.is-collapsed) .career-timeline__toggle:not([hidden]) {
+  display: inline-flex;
+}
+
+.career-timeline-wrap:not(.is-collapsed) .career-timeline__chevron {
+  transform: rotate(180deg);
 }
 
 .career-item,

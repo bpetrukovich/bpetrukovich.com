@@ -1,3 +1,105 @@
-<div class="career-timeline">
-  {{- .Inner -}}
+{{ $preview := .Get "preview" | default 4 }} {{ $id := printf
+"career-timeline-%d" .Ordinal }} {{ $lang := .Page.Language.Lang }} {{ $expand
+:= cond (eq $lang "ru") "Показать ещё" "Show more" }} {{ $collapse := cond (eq
+$lang "ru") "Свернуть" "Show less" }}
+<div
+  class="career-timeline-wrap"
+  id="{{ $id }}"
+  data-preview="{{ $preview }}"
+  data-expand="{{ $expand }}"
+  data-collapse="{{ $collapse }}"
+>
+  <div class="career-timeline" id="{{ $id }}-list">{{- .Inner -}}</div>
+  <button
+    type="button"
+    class="career-timeline__toggle"
+    aria-expanded="false"
+    aria-controls="{{ $id }}-list"
+    aria-label="{{ $expand }}"
+    hidden
+  >
+    <svg
+      class="career-timeline__chevron"
+      aria-hidden="true"
+      viewBox="0 0 24 24"
+      width="22"
+      height="22"
+    >
+      <path
+        d="M6 9l6 6 6-6"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+    </svg>
+  </button>
 </div>
+{{- if not (.Page.Scratch.Get "career-timeline-script") -}} {{-
+.Page.Scratch.Set "career-timeline-script" true -}}
+<script>
+  (() => {
+    const cutHeight = (list, preview) => {
+      const item = list.querySelectorAll(".career-item")[preview - 1];
+      const content = item?.querySelector(".career-item__content");
+      if (!content) return null;
+      const listTop = list.getBoundingClientRect().top;
+      const { top, height } = content.getBoundingClientRect();
+      return Math.ceil(top - listTop + height * 0.7);
+    };
+
+    document.querySelectorAll(".career-timeline-wrap").forEach((wrap) => {
+      const list = wrap.querySelector(".career-timeline");
+      const btn = wrap.querySelector(".career-timeline__toggle");
+      const preview = Number(wrap.dataset.preview) || 4;
+      const items = list.querySelectorAll(".career-item");
+      if (!btn || items.length <= preview) return;
+
+      const setLabel = (expanded) => {
+        btn.setAttribute("aria-expanded", String(expanded));
+        btn.setAttribute(
+          "aria-label",
+          expanded ? wrap.dataset.collapse : wrap.dataset.expand,
+        );
+      };
+
+      const collapse = () => {
+        const h = cutHeight(list, preview);
+        if (h == null) return;
+        wrap.classList.add("is-collapsed");
+        list.style.maxHeight = `${h}px`;
+        setLabel(false);
+      };
+
+      const expand = () => {
+        wrap.classList.remove("is-collapsed");
+        list.style.maxHeight = `${list.scrollHeight}px`;
+        setLabel(true);
+        list.addEventListener(
+          "transitionend",
+          (e) => {
+            if (
+              e.target === list &&
+              e.propertyName === "max-height" &&
+              !wrap.classList.contains("is-collapsed")
+            ) {
+              list.style.maxHeight = "none";
+            }
+          },
+          { once: true },
+        );
+      };
+
+      btn.hidden = false;
+      collapse();
+      btn.addEventListener("click", () =>
+        wrap.classList.contains("is-collapsed") ? expand() : collapse(),
+      );
+      window.addEventListener("resize", () => {
+        if (wrap.classList.contains("is-collapsed")) collapse();
+      });
+    });
+  })();
+</script>
+{{- end -}}
