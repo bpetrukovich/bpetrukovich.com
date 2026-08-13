@@ -3,8 +3,6 @@
 # TODO: change favicon
 # TODO: tweak bg color
 # TODO: index in google
-# TODO: add README.md
-# TODO: think about changing top left link text
 
 theme = "blowfish"  # UNCOMMENT THIS LINE
 defaultContentLanguage = "en"
