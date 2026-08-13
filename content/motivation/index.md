@@ -26,7 +26,7 @@ I believe anyone involved with the web has had, or still has, the idea of creati
 
 And here it is.
 
-The site runs on an amazingly simple and fast stack: the [Hugo](https://gohugo.io) static site generator and the beautiful, functional [Blowfish](https://blowfish.page) theme. But technology changes. Recalling Plato, one could say this is the _"world of things."_
+The site runs on an amazingly simple stack: the [Hugo](https://gohugo.io) static site generator and the functional [Blowfish](https://blowfish.page) theme. But technology changes. Recalling Plato, one could say this is the _"world of things."_
 
 Far more important is the _"world of ideas"_ — the principles laid down at the project's very inception:
 
