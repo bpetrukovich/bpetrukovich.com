@@ -1,3 +1,7 @@
+#main-content {
+  padding-top: 50px;
+}
+
 #itr {
   background-image: linear-gradient(to right, #4d9eff, #ff19d3);
   -webkit-background-clip: text;
