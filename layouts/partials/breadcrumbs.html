@@ -1,0 +1,20 @@
+<ol class="text-sm text-neutral-500 dark:text-neutral-400 print:hidden">
+  {{ $depth := add (len .Ancestors) 1 }}
+  {{ template "crumb" (dict "p1" . "p2" . "depth" $depth) }}
+</ol>
+{{ define "crumb" }}
+  {{ if .p1.Parent }}
+    {{ template "crumb" (dict "p1" .p1.Parent "p2" .p2 "depth" .depth) }}
+  {{ else if not .p1.IsHome }}
+    {{ template "crumb" (dict "p1" .p1.Site.Home "p2" .p2 "depth" .depth) }}
+  {{ end }}
+  <li class="{{ if or (eq .p1 .p2) (and .p1.IsHome (ne .depth 2)) }}hidden{{ else }}inline{{ end }}">
+    <a class="hover:underline decoration-neutral-300 dark:underline-neutral-600" href="{{ .p1.RelPermalink }}"
+      >{{ if .p1.Title }}
+        {{- .p1.Title -}}
+      {{ else }}
+        {{- .p1.Section -}}
+      {{ end }}</a
+    ><span class="px-1 text-primary-500">/</span>
+  </li>
+{{ end }}

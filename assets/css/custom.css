@@ -1,3 +1,11 @@
+#single_header {
+  margin-top: 0;
+}
+
+header h1 {
+  margin-top: 0;
+}
+
 #main-content {
   padding-top: 60px;
 }
