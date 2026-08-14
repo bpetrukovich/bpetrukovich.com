@@ -66,7 +66,6 @@ type = "fragments"
 weight = 10
 
 [params.author]
-# TODO: think about adding a photo
 name = "Bogdan Petrukovich"
 headline = "Fullstack dev at <a id=\"itr\" class=\"underline-on-hover\" href=\"https://www.itransition.com/\" target=\"_blank\" rel=\"noopener noreferrer\">itransition</a> · student at <a href=\"https://www.bsuir.by/en/\" class=\"underline-on-hover\" target=\"_blank\" rel=\"noopener noreferrer\">BSUIR</a>"
 bio = "Obsessed with learning and building every day"
@@ -74,3 +73,4 @@ links = [
   { github = "https://github.com/bpetrukovich" },
   { linkedin = "https://linkedin.com/in/bpetrukovich" }
 ]
+image = "/me.jpg"
